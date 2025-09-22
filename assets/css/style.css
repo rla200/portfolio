@@ -18,13 +18,28 @@ body{
     .movie_wrap{
         width: 100vw ;
     }
+        .gauge_text{
+        position: absolute;
+        top:30%;
+        right:5%;
+              opacity: 100%;
+    }
 }
 
 @media screen and (max-width: 736px) {
     .wrapper.fullscreen {
         padding: 0 0!important;
     }
+    .gauge_text{
+        position: absolute;
+        top:30%;
+        right:5%;
+              opacity: 100%;
+    }
 }
+
+
+
 
 @keyframes Gauge {
     0%{
@@ -33,26 +48,22 @@ body{
     50%{transform: scalex(1);}
 }
 .gauge{
-    width: 430px;
-    height: 100px;
+    width: 90%;
+    height: 20%;
     background: #9d4edf;
 animation: Gauge 5s infinite;
     position: absolute;
-    top: 160px;
-    left: 150px;
+    top: 55%;
+    left: 5%;
     transform-origin: center left;
 }
 
-.gauge1{
-    width: 400px;
-    height: 100px;
-    background: rgb(158, 78, 223);
-animation: Gauge 5s infinite;
-    position: absolute;
-    top: 160px;
-    left: 150px;
-    transform-origin: center left;
-}
+    .gauge_text2{
+opacity: 0;
+
+    }
+
+
 
 .inner_ner{
     background-color: rgb(205, 179, 248);
